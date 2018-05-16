@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="7px" viewBox="0 0 10 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>AED533F0-E3BB-473F-BF3C-6236243A822D</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <path d="M6.26148438,0.811791083 L6.26148438,9.18822337 C6.26148438,9.7682364 5.51346354,10.0586986 5.07599826,9.64857494 L0.608567708,5.46035879 C0.337387153,5.20612702 0.337387153,4.79388744 0.608567708,4.53965567 L5.07599826,0.351439521 C5.51346354,-0.0587167294 6.26148438,0.231778062 6.26148438,0.811791083 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-251.000000, -806.000000)">
+            <g id="Icons/Solid/caret-left" transform="translate(256.000000, 809.500000) rotate(-90.000000) translate(-256.000000, -809.500000) translate(252.500000, 804.500000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="caret-left" fill="#0060D6" fill-rule="nonzero" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

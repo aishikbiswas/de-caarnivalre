@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>BD42AC0B-2875-42D0-A9DF-630EEAF80A9B</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <path d="M605.653164,300.142578 L606.545028,299.275391 C606.922665,298.908203 607.533311,298.908203 607.90693,299.275391 L615.716773,306.865234 C616.094409,307.232422 616.094409,307.826172 615.716773,308.189453 L607.90693,315.783203 C607.529294,316.150391 606.918647,316.150391 606.545028,315.783203 L605.653164,314.916016 C605.27151,314.544922 605.279545,313.939453 605.669233,313.576172 L610.510211,309.091797 L598.964178,309.091797 C598.429863,309.091797 598,308.673828 598,308.154297 L598,306.904297 C598,306.384766 598.429863,305.966797 598.964178,305.966797 L610.510211,305.966797 L605.669233,301.482422 C605.275527,301.119141 605.267492,300.513672 605.653164,300.142578 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-598.000000, -299.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="arrow-right" fill="#5E6064" fill-rule="nonzero" transform="translate(607.000000, 307.529297) rotate(-180.000000) translate(-607.000000, -307.529297) " xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

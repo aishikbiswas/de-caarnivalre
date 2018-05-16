@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1411px" height="248px" viewBox="0 0 1411 248" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>9FB772C4-D1FD-4FC9-812A-1BA137EA9F8F</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <path d="M6,2.875 C7.8375,2.875 9.33333333,4.27734375 9.33333333,6 C9.33333333,7.72265625 7.8375,9.125 6,9.125 C4.1625,9.125 2.66666667,7.72265625 2.66666667,6 C2.66666667,4.27734375 4.1625,2.875 6,2.875 Z M6,0.375 C2.6875,0.375 0,2.89453125 0,6 C0,9.10546875 2.6875,11.625 6,11.625 C9.3125,11.625 12,9.10546875 12,6 C12,2.89453125 9.3125,0.375 6,0.375 Z" id="path-1"></path>
+        <path d="M6,2.875 C7.8375,2.875 9.33333333,4.27734375 9.33333333,6 C9.33333333,7.72265625 7.8375,9.125 6,9.125 C4.1625,9.125 2.66666667,7.72265625 2.66666667,6 C2.66666667,4.27734375 4.1625,2.875 6,2.875 Z M6,0.375 C2.6875,0.375 0,2.89453125 0,6 C0,9.10546875 2.6875,11.625 6,11.625 C9.3125,11.625 12,9.10546875 12,6 C12,2.89453125 9.3125,0.375 6,0.375 Z" id="path-3"></path>
+        <path d="M6,2.875 C7.8375,2.875 9.33333333,4.27734375 9.33333333,6 C9.33333333,7.72265625 7.8375,9.125 6,9.125 C4.1625,9.125 2.66666667,7.72265625 2.66666667,6 C2.66666667,4.27734375 4.1625,2.875 6,2.875 Z M6,0.375 C2.6875,0.375 0,2.89453125 0,6 C0,9.10546875 2.6875,11.625 6,11.625 C9.3125,11.625 12,9.10546875 12,6 C12,2.89453125 9.3125,0.375 6,0.375 Z" id="path-5"></path>
+        <path d="M2.5,1.19791667 C3.265625,1.19791667 3.88888889,1.78222656 3.88888889,2.5 C3.88888889,3.21777344 3.265625,3.80208333 2.5,3.80208333 C1.734375,3.80208333 1.11111111,3.21777344 1.11111111,2.5 C1.11111111,1.78222656 1.734375,1.19791667 2.5,1.19791667 Z M2.5,0.15625 C1.11979167,0.15625 0,1.20605469 0,2.5 C0,3.79394531 1.11979167,4.84375 2.5,4.84375 C3.88020833,4.84375 5,3.79394531 5,2.5 C5,1.20605469 3.88020833,0.15625 2.5,0.15625 Z" id="path-7"></path>
+        <path d="M9,4.3125 C11.75625,4.3125 14,6.41601563 14,9 C14,11.5839844 11.75625,13.6875 9,13.6875 C6.24375,13.6875 4,11.5839844 4,9 C4,6.41601563 6.24375,4.3125 9,4.3125 Z M9,0.5625 C4.03125,0.5625 0,4.34179688 0,9 C0,13.6582031 4.03125,17.4375 9,17.4375 C13.96875,17.4375 18,13.6582031 18,9 C18,4.34179688 13.96875,0.5625 9,0.5625 Z" id="path-9"></path>
+        <path d="M6,2.875 C7.8375,2.875 9.33333333,4.27734375 9.33333333,6 C9.33333333,7.72265625 7.8375,9.125 6,9.125 C4.1625,9.125 2.66666667,7.72265625 2.66666667,6 C2.66666667,4.27734375 4.1625,2.875 6,2.875 Z M6,0.375 C2.6875,0.375 0,2.89453125 0,6 C0,9.10546875 2.6875,11.625 6,11.625 C9.3125,11.625 12,9.10546875 12,6 C12,2.89453125 9.3125,0.375 6,0.375 Z" id="path-11"></path>
+        <path d="M5,2.39583333 C6.53125,2.39583333 7.77777778,3.56445313 7.77777778,5 C7.77777778,6.43554688 6.53125,7.60416667 5,7.60416667 C3.46875,7.60416667 2.22222222,6.43554688 2.22222222,5 C2.22222222,3.56445313 3.46875,2.39583333 5,2.39583333 Z M5,0.3125 C2.23958333,0.3125 0,2.41210938 0,5 C0,7.58789062 2.23958333,9.6875 5,9.6875 C7.76041667,9.6875 10,7.58789062 10,5 C10,2.41210938 7.76041667,0.3125 5,0.3125 Z" id="path-13"></path>
+        <path d="M2,0.958333333 C2.6125,0.958333333 3.11111111,1.42578125 3.11111111,2 C3.11111111,2.57421875 2.6125,3.04166667 2,3.04166667 C1.3875,3.04166667 0.888888889,2.57421875 0.888888889,2 C0.888888889,1.42578125 1.3875,0.958333333 2,0.958333333 Z M2,0.125 C0.895833333,0.125 0,0.96484375 0,2 C0,3.03515625 0.895833333,3.875 2,3.875 C3.10416667,3.875 4,3.03515625 4,2 C4,0.96484375 3.10416667,0.125 2,0.125 Z" id="path-15"></path>
+        <path d="M8,3.83333333 C10.45,3.83333333 12.4444444,5.703125 12.4444444,8 C12.4444444,10.296875 10.45,12.1666667 8,12.1666667 C5.55,12.1666667 3.55555556,10.296875 3.55555556,8 C3.55555556,5.703125 5.55,3.83333333 8,3.83333333 Z M8,0.5 C3.58333333,0.5 0,3.859375 0,8 C0,12.140625 3.58333333,15.5 8,15.5 C12.4166667,15.5 16,12.140625 16,8 C16,3.859375 12.4166667,0.5 8,0.5 Z" id="path-17"></path>
+        <path d="M8,3.83333333 C10.45,3.83333333 12.4444444,5.703125 12.4444444,8 C12.4444444,10.296875 10.45,12.1666667 8,12.1666667 C5.55,12.1666667 3.55555556,10.296875 3.55555556,8 C3.55555556,5.703125 5.55,3.83333333 8,3.83333333 Z M8,0.5 C3.58333333,0.5 0,3.859375 0,8 C0,12.140625 3.58333333,15.5 8,15.5 C12.4166667,15.5 16,12.140625 16,8 C16,3.859375 12.4166667,0.5 8,0.5 Z" id="path-19"></path>
+        <path d="M6,2.875 C7.8375,2.875 9.33333333,4.27734375 9.33333333,6 C9.33333333,7.72265625 7.8375,9.125 6,9.125 C4.1625,9.125 2.66666667,7.72265625 2.66666667,6 C2.66666667,4.27734375 4.1625,2.875 6,2.875 Z M6,0.375 C2.6875,0.375 0,2.89453125 0,6 C0,9.10546875 2.6875,11.625 6,11.625 C9.3125,11.625 12,9.10546875 12,6 C12,2.89453125 9.3125,0.375 6,0.375 Z" id="path-21"></path>
+        <path d="M1272.26791,31.5883398 L1261.81412,31.5883398 C1261.09026,31.5883398 1260.72777,30.7468164 1261.2396,30.254668 L1266.46649,25.2288086 C1266.78377,24.9237305 1267.29825,24.9237305 1267.61553,25.2288086 L1272.84242,30.254668 C1273.3543,30.7468164 1272.99176,31.5883398 1272.26791,31.5883398 Z" id="path-23"></path>
+        <path d="M808.267906,34.5883398 L797.814119,34.5883398 C797.090262,34.5883398 796.727765,33.7468164 797.2396,33.254668 L802.466494,28.2288086 C802.783775,27.9237305 803.29825,27.9237305 803.615531,28.2288086 L808.842425,33.254668 C809.3543,33.7468164 808.991762,34.5883398 808.267906,34.5883398 Z" id="path-25"></path>
+        <path d="M1346.78709,167.815403 L1331.21289,167.815403 C1330.13447,167.815403 1329.59442,166.561689 1330.35696,165.82848 L1338.14406,158.340882 C1338.61675,157.886373 1339.38322,157.886373 1339.85591,158.340882 L1347.64301,165.82848 C1348.40561,166.561689 1347.8655,167.815403 1346.78709,167.815403 Z" id="path-27"></path>
+        <path d="M578.921856,221.724803 L565.07812,221.724803 C564.119532,221.724803 563.639485,220.610391 564.317297,219.958649 L571.239165,213.303007 C571.659334,212.898998 572.340642,212.898998 572.760811,213.303007 L579.682679,219.958649 C580.360545,220.610391 579.880444,221.724803 578.921856,221.724803 Z" id="path-29"></path>
+        <path d="M116.267906,227.58834 L105.814119,227.58834 C105.090262,227.58834 104.727765,226.746816 105.2396,226.254668 L110.466494,221.228809 C110.783775,220.92373 111.29825,220.92373 111.615531,221.228809 L116.842425,226.254668 C117.3543,226.746816 116.991762,227.58834 116.267906,227.58834 Z" id="path-31"></path>
+        <path d="M56.9218557,159.724803 L43.0781204,159.724803 C42.1195325,159.724803 41.6394853,158.610391 42.317297,157.958649 L49.2391647,151.303007 C49.6593337,150.898998 50.3406424,150.898998 50.7608114,151.303007 L57.6826791,157.958649 C58.3605446,158.610391 57.8804437,159.724803 56.9218557,159.724803 Z" id="path-33"></path>
+        <path d="M170.921856,36.7248027 L157.07812,36.7248027 C156.119532,36.7248027 155.639485,35.6103905 156.317297,34.9586485 L163.239165,28.3030065 C163.659334,27.8989978 164.340642,27.8989978 164.760811,28.3030065 L171.682679,34.9586485 C172.360545,35.6103905 171.880444,36.7248027 170.921856,36.7248027 Z" id="path-35"></path>
+        <path d="M383.595696,199.271801 L378.404295,199.271801 C378.044825,199.271801 377.864807,198.853896 378.118986,198.609493 L380.714687,196.113627 C380.87225,195.962124 381.127741,195.962124 381.285304,196.113627 L383.881005,198.609493 C384.135204,198.853896 383.955166,199.271801 383.595696,199.271801 Z" id="path-37"></path>
+        <path d="M923.595696,247.271801 L918.404295,247.271801 C918.044825,247.271801 917.864807,246.853896 918.118986,246.609493 L920.714687,244.113627 C920.87225,243.962124 921.127741,243.962124 921.285304,244.113627 L923.881005,246.609493 C924.135204,246.853896 923.955166,247.271801 923.595696,247.271801 Z" id="path-39"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="02-Knowledge-management-Home-screen-Copy-2" transform="translate(-22.000000, -154.000000)">
+            <g id="Particels" transform="translate(22.000000, 154.000000)">
+                <g id="Icons/Solid/genderless-Copy-10" opacity="0.200000003" transform="translate(1204.000000, 208.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="genderless" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+                    <g id="Colors/Primary" mask="url(#mask-2)" fill="#FFFFFF">
+                        <g transform="translate(-6.000000, -6.000000)" id="Rectangle">
+                            <rect x="0" y="0" width="24" height="24"></rect>
+                        </g>
+                    </g>
+                </g>
+                <g id="Icons/Solid/genderless-Copy-11" opacity="0.5" transform="translate(654.000000, 19.000000)">
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <use id="genderless" fill="#000000" fill-rule="nonzero" xlink:href="#path-3"></use>
+                    <g id="Colors/Primary" mask="url(#mask-4)" fill="#FFFFFF">
+                        <g transform="translate(-6.000000, -6.000000)" id="Rectangle">
+                            <rect x="0" y="0" width="24" height="24"></rect>
+                        </g>
+                    </g>
+                </g>
+                <g id="Icons/Solid/genderless-Copy-19" opacity="0.5" transform="translate(1342.000000, 88.000000)">
+                    <mask id="mask-6" fill="white">
+                        <use xlink:href="#path-5"></use>
+                    </mask>
+                    <use id="genderless" fill="#000000" fill-rule="nonzero" xlink:href="#path-5"></use>
+                    <g id="Colors/Primary" mask="url(#mask-6)" fill="#FFFFFF">
+                        <g transform="translate(-6.000000, -6.000000)" id="Rectangle">
+                            <rect x="0" y="0" width="24" height="24"></rect>
+                        </g>
+                    </g>
+                </g>
+                <g id="Icons/Solid/genderless-Copy-20" opacity="0.5" transform="translate(1406.000000, 11.000000)">
+                    <mask id="mask-8" fill="white">
+                        <use xlink:href="#path-7"></use>
+                    </mask>
+                    <use id="genderless" fill="#000000" fill-rule="nonzero" xlink:href="#path-7"></use>
+                    <g id="Colors/Primary" mask="url(#mask-8)" fill="#FFFFFF">
+                        <g transform="translate(-2.500000, -2.500000)" id="Rectangle">
+                            <rect x="0" y="0" width="10" height="10"></rect>
+                        </g>
+                    </g>
+                </g>
+                <g id="Icons/Solid/genderless-Copy-15" opacity="0.5" transform="translate(111.000000, 88.000000)">
+                    <mask id="mask-10" fill="white">
+                        <use xlink:href="#path-9"></use>
+                    </mask>
+                    <use id="genderless" fill="#000000" fill-rule="nonzero" xlink:href="#path-9"></use>
+                    <g id="Colors/Primary" mask="url(#mask-10)" fill="#FFFFFF">
+                        <g transform="translate(-9.000000, -9.000000)" id="Rectangle">
+                            <rect x="0" y="0" width="36" height="36"></rect>
+                        </g>
+                    </g>
+                </g>
+                <g id="Icons/Solid/genderless-Copy-18" opacity="0.5" transform="translate(435.000000, 189.000000)">
+                    <mask id="mask-12" fill="white">
+                        <use xlink:href="#path-11"></use>
+                    </mask>
+                    <use id="genderless" fill="#000000" fill-rule="nonzero" xlink:href="#path-11"></use>
+                    <g id="Colors/Primary" mask="url(#mask-12)" fill="#FFFFFF">
+                        <g transform="translate(-6.000000, -6.000000)" id="Rectangle">
+                            <rect x="0" y="0" width="24" height="24"></rect>
+                        </g>
+                    </g>
+                </g>
+                <g id="Icons/Solid/genderless-Copy-17" opacity="0.5" transform="translate(0.000000, 7.000000)">
+                    <mask id="mask-14" fill="white">
+                        <use xlink:href="#path-13"></use>
+                    </mask>
+                    <use id="genderless" fill="#000000" fill-rule="nonzero" xlink:href="#path-13"></use>
+                    <g id="Colors/Primary" mask="url(#mask-14)" fill="#FFFFFF">
+                        <g transform="translate(-5.000000, -5.000000)" id="Rectangle">
+                            <rect x="0" y="0" width="20" height="20"></rect>
+                        </g>
+                    </g>
+                </g>
+                <g id="Icons/Solid/genderless-Copy-16" opacity="0.5" transform="translate(394.000000, 25.000000)">
+                    <mask id="mask-16" fill="white">
+                        <use xlink:href="#path-15"></use>
+                    </mask>
+                    <use id="genderless" fill="#000000" fill-rule="nonzero" xlink:href="#path-15"></use>
+                    <g id="Colors/Primary" mask="url(#mask-16)" fill="#FFFFFF">
+                        <g transform="translate(-2.000000, -2.000000)" id="Rectangle">
+                            <rect x="0" y="0" width="8" height="8"></rect>
+                        </g>
+                    </g>
+                </g>
+                <g id="Icons/Solid/genderless-Copy-12" opacity="0.100000001" transform="translate(843.000000, 196.000000)">
+                    <mask id="mask-18" fill="white">
+                        <use xlink:href="#path-17"></use>
+                    </mask>
+                    <use id="genderless" fill="#000000" fill-rule="nonzero" xlink:href="#path-17"></use>
+                    <g id="Colors/Primary" mask="url(#mask-18)" fill="#FFFFFF">
+                        <g transform="translate(-8.000000, -8.000000)" id="Rectangle">
+                            <rect x="0" y="0" width="32" height="32"></rect>
+                        </g>
+                    </g>
+                </g>
+                <g id="Icons/Solid/genderless-Copy-13" opacity="0.405491401" transform="translate(956.000000, 0.000000)">
+                    <mask id="mask-20" fill="white">
+                        <use xlink:href="#path-19"></use>
+                    </mask>
+                    <use id="genderless" fill="#000000" fill-rule="nonzero" xlink:href="#path-19"></use>
+                    <g id="Colors/Primary" mask="url(#mask-20)" fill="#FFFFFF">
+                        <g transform="translate(-8.000000, -8.000000)" id="Rectangle">
+                            <rect x="0" y="0" width="32" height="32"></rect>
+                        </g>
+                    </g>
+                </g>
+                <g id="Icons/Solid/genderless-Copy-14" opacity="0.100000001" transform="translate(1127.000000, 50.000000)">
+                    <mask id="mask-22" fill="white">
+                        <use xlink:href="#path-21"></use>
+                    </mask>
+                    <use id="genderless" fill="#000000" fill-rule="nonzero" xlink:href="#path-21"></use>
+                    <g id="Colors/Primary" mask="url(#mask-22)" fill="#FFFFFF">
+                        <g transform="translate(-6.000000, -6.000000)" id="Rectangle">
+                            <rect x="0" y="0" width="24" height="24"></rect>
+                        </g>
+                    </g>
+                </g>
+                <mask id="mask-24" fill="white">
+                    <use xlink:href="#path-23"></use>
+                </mask>
+                <use id="caret-up" fill="#FFFFFF" fill-rule="nonzero" opacity="0.100000001" xlink:href="#path-23"></use>
+                <mask id="mask-26" fill="white">
+                    <use xlink:href="#path-25"></use>
+                </mask>
+                <use id="caret-up-copy" fill="#FFFFFF" fill-rule="nonzero" opacity="0.5" xlink:href="#path-25"></use>
+                <mask id="mask-28" fill="white">
+                    <use xlink:href="#path-27"></use>
+                </mask>
+                <use id="caret-up-copy-5" fill="#FFFFFF" fill-rule="nonzero" opacity="0.5" xlink:href="#path-27"></use>
+                <mask id="mask-30" fill="white">
+                    <use xlink:href="#path-29"></use>
+                </mask>
+                <use id="caret-up-copy-2" fill="#FFFFFF" fill-rule="nonzero" opacity="0.200000003" xlink:href="#path-29"></use>
+                <mask id="mask-32" fill="white">
+                    <use xlink:href="#path-31"></use>
+                </mask>
+                <use id="caret-up-copy-3" fill="#FFFFFF" fill-rule="nonzero" opacity="0.200000003" xlink:href="#path-31"></use>
+                <mask id="mask-34" fill="white">
+                    <use xlink:href="#path-33"></use>
+                </mask>
+                <use id="caret-up-copy-8" fill="#FFFFFF" fill-rule="nonzero" opacity="0.200000003" xlink:href="#path-33"></use>
+                <mask id="mask-36" fill="white">
+                    <use xlink:href="#path-35"></use>
+                </mask>
+                <use id="caret-up-copy-4" fill="#FFFFFF" fill-rule="nonzero" opacity="0.300000012" transform="translate(164.000000, 32.362401) scale(-1, 1) rotate(-180.000000) translate(-164.000000, -32.362401) " xlink:href="#path-35"></use>
+                <mask id="mask-38" fill="white">
+                    <use xlink:href="#path-37"></use>
+                </mask>
+                <use id="caret-up-copy-6" fill="#FFFFFF" fill-rule="nonzero" opacity="0.300000012" transform="translate(381.000000, 197.635901) scale(-1, 1) rotate(-180.000000) translate(-381.000000, -197.635901) " xlink:href="#path-37"></use>
+                <mask id="mask-40" fill="white">
+                    <use xlink:href="#path-39"></use>
+                </mask>
+                <use id="caret-up-copy-7" fill="#FFFFFF" fill-rule="nonzero" opacity="0.300000012" transform="translate(921.000000, 245.635901) scale(-1, 1) rotate(-180.000000) translate(-921.000000, -245.635901) " xlink:href="#path-39"></use>
+            </g>
+        </g>
+    </g>
+</svg>

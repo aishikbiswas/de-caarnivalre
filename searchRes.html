@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		
+		<link rel="stylesheet" href="res/css/fa-svg-with-js.css"></link>
+		<link rel="stylesheet" href="res/css/animate.css"></link>
+		<script defer src="https://use.fontawesome.com/releases/v5.0.12/js/all.js" integrity="sha384-Voup2lBiiyZYkRto2XWqbzxHXwzcm4A5RfdfG6466bu5LqjwwrjXCMBQBLMWh7qR" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<script src="https://d3js.org/d3.v3.js"></script>
+		
+		<style>
+			.navbar-brand span small {
+			  display:block;
+			  font-size:0.8rem;
+			  margin-top:-5px;
+			}
+			.Group-4 {
+  width: 30px;
+  height: 40px;
+  margin-top:10px;
+  object-fit: contain;
+}
+			.navbar-brand span{
+				display:block;
+				float:left;
+				margin-left:8px;
+				margin-top:-5px;
+				font-family: "franklin-gothic-urw", sans-serif;
+				font-weight:600;
+				color:#616367;
+			}
+			
+			.shadow{
+				 box-shadow: 0 0px 0px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+			}
+			.heading-text{
+				color: #fff;
+			
+				font-size: 1rem;
+				font-weight: 500;
+			   
+				line-height: 2;
+				margin-left: 20px;
+				
+				 
+			  height: 20px;
+			  font-family: ITCFranklinGothicStd-Demi;
+			  font-size: 20px;
+			
+			  font-style: normal;
+			  font-stretch: normal;
+			  
+			  letter-spacing: normal;
+			  text-align: left;
+			  color: #ffffff;
+			}
+			.cog {
+			  width: 24px;
+			  height: 24px;
+			  object-fit: contain;
+			  
+			}
+			
+			#name-span{
+				float: right;
+				width: 79px;
+				height: 18px;
+				font-family: ITCFranklinGothicStd-Med;
+				font-size: 18px;
+				font-weight: normal;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: normal;
+				letter-spacing: normal;
+				text-align: left;
+				color: #5e6064;
+				line-height: 2.5;
+			}
+			
+			.spanText{
+				float: right;
+				margin-right : 20px;
+				font-family: ITCFranklinGothicStd-Med;
+				font-size: 18px;
+				font-weight: normal;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: normal;
+				letter-spacing: normal;
+				text-align: left;
+				color: #5e6064;
+				line-height: 2.5;
+				cursor:pointer;
+			}
+			.search-container{
+				
+				
+				margin-bottom:30px;
+			}
+			.vertical-align {
+				display: flex;
+				align-items: center;
+			}
+			.form-control{
+				margin-left
+			}
+			.search-button{
+				color : #2841ff;
+				
+			}
+			.search-input{
+				box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.09);
+			}
+			.filterOptions{
+				width: 45px;
+				height: 450px;
+				border-radius: 4px;
+				float:right;
+				background-color: #ffffff;
+				box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.09);
+				padding : 10px 2px 10px 2px;
+				
+			}
+			.filters {
+			  width: 15px;
+			  height: 20px;
+			  object-fit: contain;
+			  
+			  display:block;
+			  margin:auto;
+			  margin-bottom : 10px;
+			}
+			.searchResults{
+				width: 100%;
+				height: 450px;
+				border-radius: 4px;
+				float:right;
+				background-color: #ffffff;
+				box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.09);
+				padding : 10px 2px 10px 2px;
+				background: #2841ff;
+				background-image: url("img/particels.png"); /* fallback */
+				background-image: url("img/particels.png"), linear-gradient(#2841ff, #04b0ff);
+			}
+			
+			.node {
+				cursor: pointer;
+			}
+
+			.node circle {
+			  fill:#3023ae;
+			  stroke: steelblue;
+			  stroke-width: 3px;
+			}
+
+			.node text {
+			  font-family: ITCFranklinGothicStd-Demi;
+			  font-size: 11px;
+			  font-weight: normal;
+			  font-style: normal;
+			  font-stretch: normal;
+			  line-height: normal;
+			  letter-spacing: normal;
+			  text-align: center;
+			  color: #ffffff;
+			}
+			
+			.nodeText {
+			  font-family: ITCFranklinGothicStd-Demi;
+			  font-size: 10px;
+			  vertical-align:center;
+			  font-weight: normal;
+			  font-style: normal;
+			  font-stretch: normal;
+			  line-height: normal;
+			  letter-spacing: normal;
+			  text-align: center;
+			  color: #ffffff;
+			  height:100%;
+			  background-color : transparent;
+			}
+		
+			.link {
+			  fill: none;
+			  stroke: #ccc;
+			  stroke-width: 2px;
+			}
+			.Particels {
+			  width: 946px;
+			  height: 633px;
+			  object-fit: contain;
+			  opacity: 0.3;
+			}
+			.allResults{
+				width: 135px;
+				height: 45px;
+				border-radius: 27px 0 0 27px;
+				background-color: #ffffff;
+				box-shadow: -9px 10px 10px 0 rgba(0, 0, 0, 0.2);
+				
+				position: absolute;
+				right : 15px;
+			}
+			.circle{
+			
+				 width: 216.3px;
+				  height: 212.6px;
+				  opacity: 0.2;
+				  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+				  border-style: solid;
+				  border-width: 6px;
+				  border-image-source: linear-gradient(319deg, #3023ae, #c86dd7);
+				  border-image-slice: 1;
+			}
+			
+			
+			.t1{
+				font-family: ITCFranklinGothicStd-Med;
+			  font-size: 14px;
+			  font-weight: normal;
+			  font-style: normal;
+			  font-stretch: normal;
+			  line-height: normal;
+			  letter-spacing: normal;
+			  text-align: left;
+			  color: #0060d6;
+			}
+			
+			.t2{
+				 opacity: 0.8;
+			  font-family: ITCFranklinGothicStd-Med;
+			  font-size: 8px;
+			  font-weight: normal;
+			  font-style: normal;
+			  font-stretch: normal;
+			  line-height: normal;
+			  letter-spacing: normal;
+			  text-align: left;
+			  color: #5e6064;
+			}
+			
+			.t3{
+				font-family: ITCFranklinGothicStd;
+			  font-size: 12px;
+			  font-weight: normal;
+			  font-style: normal;
+			  font-stretch: normal;
+			  line-height: normal;
+			  letter-spacing: normal;
+			  text-align: justify;
+			  color: #5e6064;
+			}
+		</style>
+		
+		<script>
+		function getParameterByName(name, url) {
+			if (!url) url = window.location.href;
+			name = name.replace(/[\[\]]/g, "\\$&");
+			var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+				results = regex.exec(url);
+			if (!results) return null;
+			if (!results[2]) return '';
+			return decodeURIComponent(results[2].replace(/\+/g, " "));
+			}
+			
+			function slideInDiv(){
+				
+				if(tempo==true){
+					
+					$("#shortRes").css('right','15px');
+					$('#slideD').hide();
+					
+				}else{
+					$("#shortRes").css('right','360px');
+					$('#slideD').show();
+				}
+				
+				tempo = !tempo;
+					update();
+				
+			}
+		</script>
+	</head>
+	
+	<body style='background-color:#f5f8fa'>
+
+		<nav class="navbar navbar-light bg-light" style='background-color:#fff'>
+		  <!-- Navbar content -->
+		  <a class="navbar-brand " href="#">
+			<img src="res/img/axa-logo.svg" width="40" height="40"  alt="" style='float:left' class="d-inline-block align-top"><span>Knowledge <small>Management</small></span>
+		  </a>
+		  <a class="navbar-brand" href="#" style='float:right;margin-right: 30px;'>
+			<img src="img/profile-image.jpg" width="40" height="40"  alt=""  class="rounded-circle">
+			<span id='name-span'>Eric Taylor <img src="img/cog.svg" class="cog"> &nbsp;&nbsp;</span>
+			
+			<!-- svg -->
+			
+		  </a>
+		  
+		</nav>
+		
+		<div style='background-color:#0060d6;height:3px;'>
+		</div>
+		<div class="container-fluid">
+			<div class="row search-container vertical-align">
+				<div class="col-md-2"></div>
+				<div class ="col-md-8">
+					<div class="input-group">
+					  <input type="text" class="form-control search-input" style="border-color:#fff" placeholder="Collections" aria-label="Search" aria-describedby="basic-addon2">
+					  <div class="input-group-append">
+						 <button class="btn btn-outline-secondary search-button" style='background-color: #fff; border-color: #fff;'type="button"><i class="fas fa-search"></i></button>
+					  </div>
+					</div>
+				</div>
+				<div class="col-md-2"></div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-2">
+					<div class="filterOptions">
+						<img src="img/clipboard.png" srcset="img/clipboard@2x.png 2x,img/clipboard@3x.png 3x" class="filters">
+						<img src="img/bars.svg" class="filters">
+						<img src="img/bullhorn.svg" class="filters">
+						<img src="img/cubes.svg" class="filters">
+						<hr>
+						<img src="img/doc-file-format-symbol-copy.svg" class="filters">
+						<img src="img/pdf-file-format-symbol.svg" class="filters">
+						<img src="img/xls-file-format-symbol.svg" class="filters">
+						<hr>
+						<img src="img/money-bill-alt.svg" class="filters">
+						<img src="img/shopping-basket.svg" class="filters">
+						<img src="img/briefcase.svg" class="filters">
+						<hr>
+						
+						
+						
+					</div>
+				</div>
+				<div class ="col-md-8">
+				
+					<div class="searchResults" id="searchResults"> 
+					
+						<div class="allResults" onclick="slideInDiv()" id="shortRes"><h4 class='spanText'>5 Results</h4></div>
+						
+						
+					</div>
+					<div  id= "slideD" style="height:100%;background-color:#fff;float:right;width:360px;position:absolute;display:none;right:15px">
+					
+							<div class='row' style='height:100px;background-color:#FFF;margin-right:0px;margin-left:0px;border-bottom:1px solid #F2F2F2'>
+								<div class="col-md-2">
+									<img src="img/group-4.svg" class="Group-4">
+								</div>
+								<div class="col-md-10">
+									<span class="t1">Changing Term Conversion to New Business</span></br>
+									<span class="t2">18 Jan 2018 by Eric Taylor</span></br>
+									<span class="t3">For Term Conversion Short applications, If a term conversion short application is received and keyed…</span>
+								</div>
+							</div><div class='row' style='height:100px;background-color:#FFF;margin-right:0px;margin-left:0px;border-bottom:1px solid #F2F2F2'>
+								<div class="col-md-2">
+									<img src="img/group-4.svg" class="Group-4">
+								</div>
+								<div class="col-md-10">
+									<span class="t1">Changing Term Conversion to New Business</span></br>
+									<span class="t2">18 Jan 2018 by Eric Taylor</span></br>
+									<span class="t3">For Term Conversion Short applications, If a term conversion short application is received and keyed…</span>
+								</div>
+							</div><div class='row' style='height:100px;background-color:#FFF;margin-right:0px;margin-left:0px;border-bottom:1px solid #F2F2F2'>
+								<div class="col-md-2">
+									<img src="img/group-4.svg" class="Group-4">
+								</div>
+								<div class="col-md-10">
+									<span class="t1">Changing Term Conversion to New Business</span></br>
+									<span class="t2">18 Jan 2018 by Eric Taylor</span></br>
+									<span class="t3">For Term Conversion Short applications, If a term conversion short application is received and keyed…</span>
+								</div>
+							</div><div class='row' style='height:100px;background-color:#FFF;margin-right:0px;margin-left:0px;border-bottom:1px solid #F2F2F2'>
+								<div class="col-md-2">
+									<img src="img/group-4.svg" class="Group-4">
+								</div>
+								<div class="col-md-10">
+									<span class="t1">Changing Term Conversion to New Business</span></br>
+									<span class="t2">18 Jan 2018 by Eric Taylor</span></br>
+									<span class="t3">For Term Conversion Short applications, If a term conversion short application is received and keyed…</span>
+								</div>
+							</div>
+					</div>
+				</div>
+				<div class ="col-md-2">
+				
+					
+				</div>
+				
+			</div>
+		</div>
+		
+		<script>
+		
+		
+		var tempo = false;
+		
+		var firstRun = true;
+		
+		var boxHeight = parseInt($('#searchResults').height());
+		var boxWidth = parseInt($('#searchResults').width());
+		
+		
+		
+		var margin = {top: 20, right: 50, bottom: 20, left: 50},
+			width = boxWidth - margin.right - margin.left,
+			height = boxHeight - margin.top - margin.bottom;
+		
+		var i = 0,
+			duration = 750,
+			root;
+		
+		var treeData;
+		var tree = d3.layout.tree()
+			.size([height, width]);
+		
+		  
+	    
+		var diagonal = d3.svg.diagonal()
+			.projection(function(d) { return [d.y, d.x]; });
+
+		var svg = d3.select("#searchResults").append("svg")
+			.attr("width", width + margin.right + margin.left)
+			.attr("height", height + margin.top + margin.bottom)
+		  .append("g")
+			.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+			
+			
+		var defs = svg.append("defs");
+		var defs2 = svg.append("defs");
+
+		var gradient = defs.append("linearGradient")
+		   .attr("id", "svgGradient")
+		   .attr("x1", "0%")
+		   .attr("x2", "100%")
+		   .attr("y1", "0%")
+		   .attr("y2", "100%");
+
+		gradient.append("stop")
+		   .attr('class', 'start')
+		   .attr("offset", "0%")
+		   .attr("stop-color", "#ff7900")
+		   .attr("stop-opacity", 1);
+
+		gradient.append("stop")
+		   .attr('class', 'end')
+		   .attr("offset", "100%")
+		   .attr("stop-color", "#ffa600")
+		   .attr("stop-opacity", 1);
+		   
+	    var gradientCircleCenter = defs2.append("linearGradient")
+		   .attr("id", "svgCircleGradient")
+		   .attr("x1", "0%")
+		   .attr("x2", "100%")
+		   .attr("y1", "0%")
+		   .attr("y2", "100%");
+
+		gradientCircleCenter.append("stop")
+		   .attr('class', 'start')
+		   .attr("offset", "0%")
+		   .attr("stop-color", "#c86dd7")
+		   .attr("stop-opacity", 1);
+
+		gradientCircleCenter.append("stop")
+		   .attr('class', 'end')
+		   .attr("offset", "100%")
+		   .attr("stop-color", "#3023ae")
+		   .attr("stop-opacity", 1);
+	   
+		   
+		var lineFunction = d3.svg.line()
+		  .x(function(d) {
+			return d.x;
+		  })
+		  .y(function(d) {
+			return d.y;
+		  })
+		  .interpolate("linear");
+		var svglink = svg.append("g");
+		var svgnode = svg.append("g");
+		var allData;
+		var arrYInit = [550,360,180,250,460];
+		var arrXInit = [height/3,height-300,height/3,290,310];
+		$(document).ready(function(){
+			var searchCri  = getParameterByName('q');
+				$.ajax({
+							type: "GET",
+							url: "http://10.75.102.172:8081/Test_knowledge/webapi/getSerachKeyword/"+searchCri+"/1=",
+							dataType: "json",
+							success: function (data) {
+
+								allData = data;
+								var objPar ={};
+								objPar.name=data.name;
+								objPar.parent=null;
+								objPar.place="super";
+								objPar.init=false;
+								objPar.children=[];
+								var child = data.Children;
+								for(var i=0;i<5;i++){
+										if(i==child.length){
+											break;
+										}
+										var objL2 = {};
+										if(i==4 && child.length >5){
+											objL2.name="Show More";
+											objL2.place="secSuper";
+											objL2.init=false;
+											objL2.yInit=arrYInit[i];
+											objL2.xInit=arrXInit[i];
+											objL2.children=[];
+										}else{
+											objL2.name=child[i].name.substring(0, 24) + '...';
+											objL2.place="secSuper";
+											objL2.init=false;
+											objL2.yInit=arrYInit[i];
+											objL2.xInit=arrXInit[i];
+											objL2.children=[];
+										
+											for(var k=0;k<3;k++){
+												if(k==child[i].Children.length){
+													break;
+												}
+												var objL3 = {};
+												objL3.name=child[i].Children[k].substring(0, 24);
+												objL3.place="terSuper";
+												objL2.children.push(objL3);
+											}
+										//console.log(objL2);
+											
+										}
+										objPar.children.push(objL2);
+								}
+								treeData = [];
+								treeData.push(objPar);
+								root = treeData[0];
+								root.x0 = height / 2;
+								root.y0 = 0;
+								root.children.forEach(collapse);
+								update(root);
+								console.log(objPar);
+						}
+			});
+		
+			
+
+		//d3.select(self.frameElement).style("height", "500px");
+
+		
+		});
+		// ************** Generate the tree diagram	 *****************
+		
+			var counter1 = 0;
+			var counter2 = 0;
+			var counter3 = 0;
+			var arr1= [1,2,3,4,5];
+			var arr2= [];
+			function update(source) {
+					root = treeData[0];
+			var divi = 1;
+			if(tempo==true){
+				divi = 2;
+			}
+		  // Compute the new tree layout.
+		    var nodes = tree.nodes(root).reverse();
+			var links = tree.links(nodes);
+			
+		  // Normalize for fixed-depth.
+		  nodes.forEach(function(d) { 
+		  
+			
+		  if(d.init!==undefined && d.place=="super"){
+			if(d.init==false){
+				d.y = 360/divi;
+				d.init = true;
+			}else{
+				d.y = 0;
+			}
+		  }else if(d.init!==undefined && d.place=="secSuper"){
+			if(d.init==false){
+				d.y = parseInt(d.yInit/divi);
+				d.y0 = parseInt(d.yInit/divi);
+				d.x = parseInt(d.xInit);
+				d.x0 = parseInt(d.xInit);
+				d.init = true;
+			}else{
+				if(tempo==false){
+					d.y = (arr1[counter1] * 90); 
+					d.x  = d.x - (arr1[counter1] *5);
+					
+				}else{
+					d.y = (arr1[counter1] * 90/3); 
+					d.x  = d.x - (arr1[counter1] *5);
+				}
+				
+				//console.log(counter1);
+				//
+				counter1++;
+			}
+		  }else{ 
+		  
+
+			d.y = d.depth * 280/divi; 
+			
+			//d.x  = d.x + (d.depth *50)
+		}
+		 console.log(d);
+		  
+		  
+		  });
+		   counter1 = 0;
+			console.log(nodes);
+		  // Update the nodes…
+		  var node = svg.selectAll("g.node")
+			  .data(nodes, function(d) { return d.id || (d.id = ++i); });
+			
+		    // Update the links…
+		  var link = svglink.selectAll(".link")
+			.data(links)
+			 .attr("marker-end", "url(#arrowhead)");
+
+		  // Enter any new links at the parent's previous position.
+		  link.enter().append("line")
+			.attr("class", "link")
+			.attr("x1", function(d) {
+			  return d.source.y;
+			})
+			.attr("y1", function(d) {
+			  return d.source.x;
+			})
+			.attr("x2", function(d) {
+			  return d.target.y;
+			})
+			.attr("y2", function(d) {
+			  return d.target.x;
+			});
+
+		  // Transition links to their new position.
+		  link.transition()
+			.duration(duration)
+			.attr("d", lineFunction)
+			.attr("x1", function(d) {
+			  return d.source.y;
+			})
+			.attr("y1", function(d) {
+			  return d.source.x;
+			})
+			.attr("x2", function(d) {
+			
+				var dist = Math.sqrt(Math.pow((d.source.y - d.target.y),2) + Math.pow((d.source.x - d.target.x),2));
+				var t = 30/dist;
+				var xCoor = (((1-t)*d.target.y) + (d.source.y *t));
+				
+			  return xCoor;
+			})
+			.attr("y2", function(d) {
+				var dist = Math.sqrt(Math.pow((d.source.y - d.target.y),2) + Math.pow((d.source.x - d.target.x),2));
+				var t = 30/dist;
+				var yCoor = (((1-t)*d.target.x) + (d.source.x *t));
+			  return yCoor;
+			});;
+
+		  // Transition exiting nodes to the parent's new position.
+		  link.exit()
+			.remove();
+
+		  // Enter any new nodes at the parent's previous position.
+		  var nodeEnter = node.enter().append("g")
+			  .attr("class", "node")
+			  .attr("transform", function(d) { return "translate(" + source.y0 + "," + source.x0 + ")"; })
+			  .on("click", click);
+
+		  nodeEnter.append("circle")
+			  .attr("r",function(d){ 
+				if(d.place=="super"){
+					if(d.poster != undefined){
+						return 40 + d.poster;
+					}else{
+						return 40;
+					}
+					
+				}else{
+					return 30;
+				}
+			  })
+			  .style("fill", function(d) { 
+				if(d.place=="super"){
+					return "#3023ae";
+				}else if(d.place=="secSuper"){
+					if(d._children != null || d.name=="Show More" ){
+						return "#2841ff";
+					}else{
+						return "#da6c00";
+					}
+					
+				}else{
+					
+					return "#2841ff";
+				}
+			  return d._children ? "lightsteelblue" : "#3023ae"; });
+
+		 
+			
+		  // Transition nodes to their new position.
+		  var nodeUpdate = node.transition()
+			  .duration(duration)
+			  .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; });
+
+		  nodeUpdate.select("circle")
+			  .attr("r",function(d){ 
+				if(d.place=="super"){
+					if(d.poster != undefined){
+						return 40 + d.poster;
+					}else{
+						return 40;
+					}
+				}else{
+					return 30;
+				}
+			  })
+			  .style("stroke", function(d){
+				
+				
+				if(d.place=="super"){
+					
+					return "url(#svgCircleGradient)";
+				}else if(d.place=="secSuper"){
+
+					return "url(#svgGradient)";
+				}else{
+					return "#b4ec51";
+				}
+			  })
+			  .style("fill", function(d) { if(d.place=="super"){
+					
+					return "#3f23a6";
+				}else if(d.place=="secSuper" ){
+					if(d._children != null || d.name=="Show More"){
+						return "none";
+					}else{
+						return "#d46900";
+					}
+				}else{
+					return "none";
+				} });
+			var side = 2 * 30 * Math.cos(Math.PI / 4) + 1,
+			dx = 30 - side / 2 -30;
+
+			var kl = nodeEnter.append('g')
+					.attr('transform', 'translate(' + [dx, dx] + ')');
+		
+			kl.append("foreignObject")
+				.attr("width", side)
+				.attr("height", side)
+				.append("xhtml:body")
+				.attr("class","nodeText")
+				.style("visibility",function(d){
+					if(d.place=="super"){
+						return "hidden";
+					}else{
+						return "visible";
+					}
+				})
+				.html(function(d) { return "<div>" + d.name + "</div>"; });
+				nodeUpdate.select("text")
+			  ;
+			 nodeEnter.append("text")
+			  .attr("dx", function(d){return -25})
+			  .style("visibility",function(d){
+					if(d.place!="super"){
+						return "hidden";
+					}else{
+						return "visible";
+					}
+				})
+			  
+			  .text(function(d) { return d.name; })
+			  .style("fill", "#fff");
+
+		  // Transition exiting nodes to the parent's new position.
+		  var nodeExit = node.exit().transition()
+			  .duration(duration)
+			  .attr("transform", function(d) { return "translate(" + source.y + "," + source.x + ")"; })
+			  .remove();
+
+		  nodeExit.select("circle")
+			  .attr("r", 1e-6);
+
+		  nodeExit.select("text")
+			  .style("fill-opacity", 1e-6);
+
+		  // Update the links…
+		
+
+		  // Stash the old positions for transition.
+		  nodes.forEach(function(d) {
+			d.x0 = d.x;
+			d.y0 = d.y;
+		  });
+		}
+
+		// Toggle children on click.
+		function click(d) {
+		  console.log(d);
+		  
+		  if(allData.Children.length > 5 && d.name=="Show More"){
+			for(var lp=4;lp<allData.Children.length;lp++){
+				d.parent.children.shift();
+				var objL2={};
+				
+				
+				objL2.name=allData.Children[lp].name.substring(0, 24) + '...';
+				objL2.place="secSuper";
+				objL2.init=false;
+				objL2.yInit=arrYInit[lp-4];
+				objL2.xInit=arrXInit[lp-4];
+				objL2.children = [{name:"test"}];
+				d.parent.children.push(objL2);
+			}
+		  }
+		  if (d.children || d.name=="Show More") {
+			if(d.parent!=null){
+				d.parent.init = false;
+				d.parent.children.forEach(function(element){element.init = false;})
+			}else{
+				d.children.forEach(function(element){element.init = false;})
+			}
+			d.init = false;
+			///Add collection parent logic
+			//d.parent.init =false;
+			d._children = d.children;
+			d.children = null;
+		  } else {
+			if(d.parent==null){
+				d.init = false;
+				d._children.forEach(function(element) {
+			  if (d !== element) {
+				collapse(element);
+			  }
+			});
+			}
+			d.children = d._children;
+			d._children = null;
+		  }
+		  if (d.parent ) {
+			d.parent.children.forEach(function(element) {
+			  if (d !== element) {
+				collapse(element);
+			  }
+			});
+		  }
+		  update(d);
+		}
+		
+		function collapse(d) {
+		  if (d.children) {
+			d._children = d.children;
+			d._children.forEach(collapse);
+			d.children = null;
+		  }
+		}
+		
+		
+		</script>
+	</body>
+</html>

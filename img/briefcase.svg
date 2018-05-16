@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="18px" viewBox="0 0 20 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>3D277201-8555-49A6-854F-1AE2358E324E</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <path d="M12.5,10.25 L20,10.25 L20,15.875 C20,16.9105469 19.1605469,17.75 18.125,17.75 L1.875,17.75 C0.839453125,17.75 0,16.9105469 0,15.875 L0,10.25 L7.5,10.25 L7.5,11.03125 C7.5,11.2901172 7.70988281,11.5 7.96875,11.5 L12.03125,11.5 C12.2901172,11.5 12.5,11.2901172 12.5,11.03125 L12.5,10.25 Z M20,5.875 L20,9 L0,9 L0,5.875 C0,4.83945313 0.839453125,4 1.875,4 L5,4 L5,2.125 C5,1.08945312 5.83945313,0.25 6.875,0.25 L13.125,0.25 C14.1605469,0.25 15,1.08945312 15,2.125 L15,4 L18.125,4 C19.1605469,4 20,4.83945313 20,5.875 Z M12.5,2.75 L7.5,2.75 L7.5,4 L12.5,4 L12.5,2.75 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="05-Knowledge-management-Search-Results-Bank-Billing-Changes" transform="translate(-172.000000, -688.000000)">
+            <g id="Icons/Solid/briefcase" transform="translate(172.000000, 688.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="briefcase" fill="#AEAFB1" fill-rule="nonzero" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

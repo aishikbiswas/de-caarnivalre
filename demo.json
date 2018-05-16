@@ -1,0 +1,91 @@
+[
+  {
+    "name": "Collections",
+    "parent": "null",
+    "children": [
+      {
+        "name": "Inforce Policy suspense",
+        "parent": "Collections",
+        "children": [
+          {
+            "name": "L3",
+            "parent": "Level 2: A",
+			"children":[
+				{
+					"name" : "L4",
+					"parent": "Son of A"
+				},
+				{
+					"name" : "L4",
+					"parent": "Son of A"
+				}
+			]
+          },
+          {
+            "name": "L3",
+            "parent": "Level 2: A"
+          }
+        ]
+      },
+      {
+        "name": "L2",
+        "parent": "Collection Agency process",
+		
+			"children":[
+				{
+					"name" : "L4",
+					"parent": "L3"
+				},
+				{
+					"name" : "L4",
+					"parent": "L3"
+				}
+			]
+      },
+	  {
+        "name": "L2",
+        "parent": "Applying New business payments",
+		
+			"children":[
+				{
+					"name" : "L4",
+					"parent": "L3"
+				},
+				{
+					"name" : "L4",
+					"parent": "L3"
+				}
+			]
+      },{
+        "name": "L2",
+        "parent": "Bank Billing Changes",
+		
+			"children":[
+				{
+					"name" : "L4",
+					"parent": "L3"
+				},
+				{
+					"name" : "L4",
+					"parent": "L3"
+				}
+			]
+      },{
+        "name": "L2",
+        "parent": "Collecting Initial Premiums",
+		
+			"children":[
+				{
+					"name" : "L4",
+					"parent": "L3"
+				},
+				{
+					"name" : "L4",
+					"parent": "L3"
+				}
+			]
+      }
+	  
+    ]
+  }
+];

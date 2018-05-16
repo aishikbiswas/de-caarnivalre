@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		
+		<link rel="stylesheet" href="res/css/fa-svg-with-js.css"></link>
+		<script defer src="https://use.fontawesome.com/releases/v5.0.12/js/all.js" integrity="sha384-Voup2lBiiyZYkRto2XWqbzxHXwzcm4A5RfdfG6466bu5LqjwwrjXCMBQBLMWh7qR" crossorigin="anonymous"></script>
+		<style>
+			.navbar-brand span small {
+			  display:block;
+			  font-size:0.8rem;
+			  margin-top:-5px;
+			}
+			.navbar-brand span{
+				display:block;
+				float:left;
+				margin-left:8px;
+				margin-top:-5px;
+				font-family: "franklin-gothic-urw", sans-serif;
+				font-weight:600;
+				color:#616367;
+			}
+			
+			.shadow{
+				 box-shadow: 0 0px 0px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+			}
+			.heading-text{
+				color: #fff;
+			
+				font-size: 1rem;
+				font-weight: 500;
+			   
+				line-height: 2;
+				margin-left: 20px;
+				
+				 
+				  height: 20px;
+				  font-family: ITCFranklinGothicStd-Demi;
+				  font-size: 20px;
+				
+				  font-style: normal;
+				  font-stretch: normal;
+				  
+				  letter-spacing: normal;
+				  text-align: left;
+				  color: #ffffff;
+			}
+			.cog {
+			  width: 24px;
+			  height: 24px;
+			  object-fit: contain;
+			  
+			}
+			
+			#name-span{
+				    float: right;
+					width: 79px;
+					height: 18px;
+					font-family: ITCFranklinGothicStd-Med;
+					font-size: 18px;
+					font-weight: normal;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: normal;
+					letter-spacing: normal;
+					text-align: left;
+					color: #5e6064;
+					line-height: 2.5;
+			}
+			.search-container{
+				background: #2841ff;
+				background-image: url("img/particels.png"); /* fallback */
+				background-image: url("img/particels.png"), linear-gradient(#2841ff, #04b0ff);
+				height: 140px;
+				
+				margin-bottom:30px;
+			}
+			.vertical-align {
+				display: flex;
+				align-items: center;
+			}
+			.form-control{
+				margin-left
+			}
+			.search-button :hover{
+				color : #2841ff;
+			}
+			.box-text{
+				font-family: ITCFranklinGothicStd;
+				font-size: 18px;
+				font-weight: normal;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: normal;
+				letter-spacing: normal;
+				text-align: left;
+				color: #5e6064;
+				margin-left: 20px;
+				margin-top:4px;
+				display:block;
+			}
+			
+			.box-subText{
+				font-family: ITCFranklinGothicStd;
+				font-size: 14px;
+				font-weight: normal;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: normal;
+				letter-spacing: normal;
+				text-align: left;
+				color: #5e6064;
+				margin-left: 20px;
+				margin-top:4px;
+				display:block;
+			}
+			.clipped {
+         overflow: hidden;
+         white-space: nowrap;
+         text-overflow: ellipsis;
+		 width:320px;
+         }
+		</style>
+		<script>
+			$(document).ready(function(){
+				$.ajax({
+							type: "GET",
+							url: "http://10.75.102.172:8081/Test_knowledge/webapi/getRecentlyAccessedDocument/amar",
+							dataType: "json",
+							success: function (data) {
+							var JSONObject2=data.recentlyAccesseddocument.entry;	  
+		          for (var i = 0; i<JSONObject2.length; i++) 
+				  { //loop through the array
+                    var obj = JSONObject2[i];
+                   // console.group("Index" + i);
+                   ///for (var key in obj) { //loop through the keys
+				   var div = document.createElement("div");
+                   div.style.marginRight = "0px";
+				   div.style.marginLeft ="0px";
+				   div.style.borderBottom ="1px solid #F2F2F2";
+                   div.style.height = "50px";
+                   div.style.background = "background-color:#FFF";
+				   div.style.width = "320px";
+				   div.style.overflow = "hidden";
+				   div.style.whiteSpace = "nowrap";
+				   div.style.textOverflow = "ellipsis";
+				   var x = document.createElement("IMG");
+                   x.setAttribute("width", "24px");
+				   x.setAttribute("height", "24px");
+				   x.setAttribute("object-fit", "contain");
+				   var final=obj.value.split("=");
+				   if(final[1].replace("}","") =='Job Aid')
+				   {
+				   x.setAttribute("src", "img/word.png");
+				   }
+				   else
+				   {
+				   x.setAttribute("src", "img/PDF.png");
+				   }
+                   div.innerHTML = ("&nbsp;&nbsp;&nbsp;"+final[0].replace("{","") +'<br> &nbsp;&nbsp;&nbsp;'+obj.key+"&nbsp;");
+				   div.appendChild(x);
+                    document.getElementById("recentlyAccessedDocument").appendChild(div);
+                   // console.log(key, obj[key]);
+                   // }
+                  // console.groupEnd("Index" + i);
+                  }
+				}
+				});
+			});
+			$(document).ready(function(){
+				$.ajax({
+							type: "GET",
+							url: "http://10.75.102.172:8081/Test_knowledge/webapi/getmostSerachedByUsers",
+							dataType: "json",
+							success: function (data) {
+							var JSONObject2=data.mostSearchedByUser.entry;	  
+		          for (var i = 0; i<JSONObject2.length; i++) 
+				  { //loop through the array
+                    var obj = JSONObject2[i];
+                   // console.group("Index" + i);
+                   //for (var key in obj) { //loop through the keys
+				   var div = document.createElement("div");
+                    div.style.marginRight = "0px";
+				    div.style.marginLeft ="0px";
+				    div.style.borderBottom ="1px solid #F2F2F2";
+                    div.style.height = "50px";
+                    div.style.background = "background-color:#FFF";
+                    div.innerHTML = "&nbsp;&nbsp;&nbsp;"+obj.value +'<br>&nbsp;&nbsp;&nbsp;'+obj.key;
+                    document.getElementById("mostSearchedByUser").appendChild(div);
+                   // console.log(key, obj[key]);
+                     //}
+                  // console.groupEnd("Index" + i);
+                  }
+				}
+				});
+			});
+			$(document).ready(function(){
+				$.ajax({
+							type: "GET",
+							url: "http://10.75.102.172:8081/Test_knowledge/webapi/getRecentKeyword/Test",
+							dataType: "json",
+							success: function (data) {
+							var JSONObject2=data.recentlySearchKeyword.entry;	  
+		          for (var i = JSONObject2.length-1; i>0; i--) 
+				  { //loop through the array
+                    var obj = JSONObject2[i];
+                    //console.group("Index" + i);
+                 //  for (var key in obj) { //loop through the keys
+				   var div = document.createElement("div");
+                   div.style.marginRight = "0px";
+				   div.style.marginLeft ="0px";
+				   div.style.borderBottom ="1px solid #F2F2F2";
+                   div.style.height = "50px";
+                   div.style.background = "background-color:#FFF";
+				   div.innerHTML ="&nbsp;&nbsp;&nbsp;"+obj.value+'<br>&nbsp;&nbsp;&nbsp;'+obj.key;
+                    document.getElementById("recentlySearchedByKeywords").appendChild(div);
+                    //console.log(key, obj[key]);
+                   //  }
+                   //console.groupEnd("Index" + i);
+                  }
+							}
+				});
+			});
+			function slideInDiv(){
+				
+				if(tempo==true){
+					
+					$("#shortRes").css('right','15px');
+					$('#slideD').hide();
+					
+				}else{
+					$("#shortRes").css('right','360px');
+					$('#slideD').show();
+				}
+				
+				tempo = !tempo;
+					update();
+				
+			}
+		</script>
+	</head>
+	
+	<body style='background-color:#f5f8fa'>
+
+		<nav class="navbar navbar-light bg-light" style='background-color:#fff'>
+		  <!-- Navbar content -->
+		  <a class="navbar-brand " href="#">
+			<img src="res/img/axa-logo.svg" width="40" height="40"  alt="" style='float:left' class="d-inline-block align-top"><span>Knowledge <small>Management</small></span>
+		  </a>
+		  <a class="navbar-brand" href="#" style='float:right;margin-right: 30px;'>
+			<img src="img/profile-image.jpg" width="40" height="40"  alt=""  class="rounded-circle">
+			<span id='name-span'>Eric Taylor <img src="img/cog.svg" class="cog"> &nbsp;&nbsp;</span>
+			
+			<!-- svg -->
+			
+		  </a>
+		  
+		</nav>
+		
+		<div style='background-color:#0060d6;height:3px;'>
+		</div>
+		<div class="container-fluid">
+			<div class="row search-container vertical-align">
+				<div class="col-md-2"></div>
+				<div class ="col-md-8">
+					<div class="input-group">
+					  <input type="text" class="form-control" style="border-color:#fff" placeholder="Search" aria-label="Search" aria-describedby="basic-addon2">
+					  <div class="input-group-append">
+						 <button class="btn btn-outline-secondary search-button" style='background-color: #fff; border-color: #fff;'type="button"><i class="fas fa-search"></i></button>
+					  </div>
+					</div>
+				</div>
+				<div class="col-md-2"></div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class ="col-md-10">
+					<div class ='row'>
+						<div class="col-md-4" >
+							<div class="shadow row" style="height: 50px;background-color: #0060D5;border-top-left-radius: 7px;border-top-right-radius: 7px;margin-right:0px;margin-left:0px;">
+								<span class='heading-text'>Recently Searched Keywords</span>
+							</div>
+								<div id="recentlySearchedByKeywords" style="background-color:#fff">
+								</div>
+						</div>
+						<div class="col-md-4">
+							<div class="shadow row" style="height: 50px;background-color: #0060D5;border-top-left-radius: 7px;border-top-right-radius: 7px;margin-right:0px;margin-left:0px;">
+								<span class='heading-text'>Recently Accessed Documents</span>
+							</div>
+							<div id="recentlyAccessedDocument" style="background-color:#fff"></div>			
+						</div>
+						<div class="col-md-4">
+							<div class="shadow row" style="height: 50px;background-color: #0060D5;border-top-left-radius: 7px;border-top-right-radius: 7px;margin-right:0px;margin-left:0px;">
+								<span class='heading-text' >Most searched by users</span>
+							</div>
+							<div id="mostSearchedByUser" style="background-color:#fff"></div>	
+						</div>
+					</div>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+		</div>
+	</body>
+</html>

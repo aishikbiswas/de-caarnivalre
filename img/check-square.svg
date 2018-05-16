@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>E01D5BED-9768-4538-851B-98EC776A7B37</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <path d="M16.0714286,17.75 L1.92857143,17.75 C0.8634375,17.75 0,16.9105469 0,15.875 L0,2.125 C0,1.08945312 0.8634375,0.25 1.92857143,0.25 L16.0714286,0.25 C17.1365625,0.25 18,1.08945312 18,2.125 L18,15.875 C18,16.9105469 17.1365625,17.75 16.0714286,17.75 Z M7.8474375,13.9195703 L15.2402946,6.73207031 C15.4913304,6.48800781 15.4913304,6.09226563 15.2402946,5.84820313 L14.3311741,4.96433594 C14.0801384,4.72027344 13.6730893,4.72023438 13.4220134,4.96433594 L7.39285714,10.8259766 L4.57798661,8.08929688 C4.32695089,7.84523438 3.91990179,7.84523438 3.66882589,8.08929688 L2.75970536,8.97316406 C2.50866964,9.21722656 2.50866964,9.61296875 2.75970536,9.85703125 L6.93827679,13.9195313 C7.18935268,14.1636719 7.59636161,14.1636719 7.8474375,13.9195703 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-966.000000, -307.000000)">
+            <g id="Icons/Solid/check-square" transform="translate(966.000000, 307.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="check-square" fill="#0060D6" fill-rule="nonzero" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

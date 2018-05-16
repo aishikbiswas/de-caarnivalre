@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>1BD08446-7351-4CFC-A2EA-529C7B9C3421</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <path d="M11.7906628,6 C11.8539307,6.28808452 11.7800778,6.60629541 11.525,6.8515625 L6.690625,11.5 C6.30875,11.8671875 5.69125,11.8671875 5.3134375,11.5 L0.475,6.8515625 C0.219922227,6.60629541 0.146069271,6.28808452 0.209337212,6 C0.146069271,5.71191548 0.219922227,5.39370459 0.475,5.1484375 L5.3134375,0.5 C5.69125,0.1328125 6.30875,0.1328125 6.690625,0.5 L11.525,5.1484375 C11.7800778,5.39370459 11.8539307,5.71191548 11.7906628,6 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="06-Knowledge-management-Search-Results-Issuing-Temporary-insurance" transform="translate(-177.000000, -828.000000)">
+            <g id="Icons/Solid/sort" transform="translate(177.000000, 828.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="sort" fill="#5E6064" fill-rule="nonzero" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>
