@@ -132,7 +132,7 @@
 			$(document).ready(function(){
 				$.ajax({
 							type: "GET",
-							url: "http://10.75.102.172:8081/Test_knowledge/webapi/getRecentlyAccessedDocument/amar",
+							url: "http://localhost:8081/Test_knowledge/webapi/getRecentlyAccessedDocument/amar",
 							dataType: "json",
 							success: function (data) {
 							var JSONObject2=data.recentlyAccesseddocument.entry;	  
@@ -145,27 +145,50 @@
                    div.style.marginRight = "0px";
 				   div.style.marginLeft ="0px";
 				   div.style.borderBottom ="1px solid #F2F2F2";
+				   div.style.borderWidth ="1px";
+				   div.style.borderStyle ="solid";
+				   div.style.borderColor ="white";
                    div.style.height = "50px";
                    div.style.background = "background-color:#FFF";
-				   div.style.width = "320px";
+				   div.style.width = "350px";
 				   div.style.overflow = "hidden";
 				   div.style.whiteSpace = "nowrap";
 				   div.style.textOverflow = "ellipsis";
 				   var x = document.createElement("IMG");
-                   x.setAttribute("width", "24px");
-				   x.setAttribute("height", "24px");
+                   x.setAttribute("width", "12px");
+				   x.setAttribute("height", "18px");
 				   x.setAttribute("object-fit", "contain");
 				   var final=obj.value.split("=");
 				   if(final[1].replace("}","") =='Job Aid')
 				   {
-				   x.setAttribute("src", "img/word.png");
+				   x.setAttribute("src", "img/xs-icon-doc.svg");
 				   }
 				   else
 				   {
-				   x.setAttribute("src", "img/PDF.png");
+				   x.setAttribute("src", "img/xs-icon-pdf.svg");
 				   }
-                   div.innerHTML = ("&nbsp;&nbsp;&nbsp;"+final[0].replace("{","") +'<br> &nbsp;&nbsp;&nbsp;'+obj.key+"&nbsp;");
-				   div.appendChild(x);
+				   if(i==0)
+				   {
+                   div.innerHTML = ('<img src="img/clipboard.png" height="24px" width="18px"/>'+"&nbsp;"+final[0].replace("{","") +'<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+obj.key+"&nbsp;"+'<img src="img/xs-icon-pdf.svg" height="18px" width="12px"/>');
+				  /// div.appendChild(x);
+				   }
+				   else if(i==1)
+				   {
+                   div.innerHTML = ('<img src="img/bullhorn-active.svg" height="24px" width="18px"/>'+"&nbsp;"+final[0].replace("{","") +'<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+obj.key+"&nbsp;"+'<img src="img/xs-icon-doc.svg" height="18px" width="12px"/>');
+				   //div.appendChild(x);
+				   }
+				    else if(i==2)
+				   {
+                   div.innerHTML = ('<img src="img/cubes-active.svg" height="24px" width="18px"/>'+"&nbsp;"+final[0].replace("{","") +'<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+obj.key+"&nbsp;"+'<img src="img/xs-icon-xls.svg" height="18px" width="12px"/>'+"&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;"+'<img src="img/info.svg" height="22px" width="12px"/>');
+				   //div.appendChild(x);
+				   }
+				   else
+				   {
+				   div.innerHTML = ('<img src="img/clipboard.png" height="24px" width="18px"/>'+"&nbsp;"+final[0].replace("{","") +'<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+obj.key+"&nbsp;"+'<img src="img/xs-icon-pdf.svg" height="18px" width="12px"/>'+"&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;"+'<img src="img/lightbulb.svg" height="30px" width="12px"/>');
+				   }
+				   
+				   ///var blank = document.createElement("&nbsp;");
+                   ///div.appendChild(blank);
                     document.getElementById("recentlyAccessedDocument").appendChild(div);
                    // console.log(key, obj[key]);
                    // }
@@ -177,11 +200,11 @@
 			$(document).ready(function(){
 				$.ajax({
 							type: "GET",
-							url: "http://10.75.102.172:8081/Test_knowledge/webapi/getmostSerachedByUsers",
+							url: "http://localhost:8081/Test_knowledge/webapi/getmostSerachedByUsers",
 							dataType: "json",
 							success: function (data) {
 							var JSONObject2=data.mostSearchedByUser.entry;	  
-		          for (var i = 0; i<JSONObject2.length; i++) 
+		          for (var i = 0; i<5; i++) 
 				  { //loop through the array
                     var obj = JSONObject2[i];
                    // console.group("Index" + i);
@@ -189,6 +212,9 @@
 				   var div = document.createElement("div");
                     div.style.marginRight = "0px";
 				    div.style.marginLeft ="0px";
+					div.style.borderStyle ="solid";
+				    div.style.borderColor ="white";
+					div.style.width = "350px";
 				    div.style.borderBottom ="1px solid #F2F2F2";
                     div.style.height = "50px";
                     div.style.background = "background-color:#FFF";
@@ -204,23 +230,26 @@
 			$(document).ready(function(){
 				$.ajax({
 							type: "GET",
-							url: "http://10.75.102.172:8081/Test_knowledge/webapi/getRecentKeyword/Test",
+							url: "http://localhost:8081/Test_knowledge/webapi/getRecentKeyword/Test",
 							dataType: "json",
 							success: function (data) {
 							var JSONObject2=data.recentlySearchKeyword.entry;	  
-		          for (var i = JSONObject2.length-1; i>0; i--) 
+		          for (var i = JSONObject2.length-1; i>JSONObject2.length-6; i--) 
 				  { //loop through the array
                     var obj = JSONObject2[i];
                     //console.group("Index" + i);
                  //  for (var key in obj) { //loop through the keys
-				   var div = document.createElement("div");
-                   div.style.marginRight = "0px";
-				   div.style.marginLeft ="0px";
-				   div.style.borderBottom ="1px solid #F2F2F2";
-                   div.style.height = "50px";
-                   div.style.background = "background-color:#FFF";
-				   div.innerHTML ="&nbsp;&nbsp;&nbsp;"+obj.value+'<br>&nbsp;&nbsp;&nbsp;'+obj.key;
-                    document.getElementById("recentlySearchedByKeywords").appendChild(div);
+				    var div = document.createElement("div");
+                     div.style.marginRight = "0px";
+				     div.style.marginLeft ="0px";
+				     div.style.borderBottom ="1px solid #F2F2F2";
+                     div.style.height = "50px";
+				     div.style.borderStyle ="solid";
+				     div.style.borderColor ="white";
+				     div.style.width = "350px";
+                     div.style.background = "background-color:#FFF";
+				     div.innerHTML ="&nbsp;&nbsp;&nbsp;"+obj.value+'<br>&nbsp;&nbsp;&nbsp;'+obj.key;
+                     document.getElementById("recentlySearchedByKeywords").appendChild(div);
                     //console.log(key, obj[key]);
                    //  }
                    //console.groupEnd("Index" + i);
@@ -285,23 +314,23 @@
 				<div class ="col-md-10">
 					<div class ='row'>
 						<div class="col-md-4" >
-							<div class="shadow row" style="height: 50px;background-color: #0060D5;border-top-left-radius: 7px;border-top-right-radius: 7px;margin-right:0px;margin-left:0px;">
+							<div class="shadow row" style="border-width: 1px;height: 50px;background-color: #0060D5;border-top-left-radius: 7px;border-top-right-radius: 7px;margin-right:0px;margin-left:0px;">
 								<span class='heading-text'>Recently Searched Keywords</span>
 							</div>
-								<div id="recentlySearchedByKeywords" style="background-color:#fff">
+								<div id="recentlySearchedByKeywords">
 								</div>
 						</div>
 						<div class="col-md-4">
 							<div class="shadow row" style="height: 50px;background-color: #0060D5;border-top-left-radius: 7px;border-top-right-radius: 7px;margin-right:0px;margin-left:0px;">
 								<span class='heading-text'>Recently Accessed Documents</span>
 							</div>
-							<div id="recentlyAccessedDocument" style="background-color:#fff"></div>			
+							<div id="recentlyAccessedDocument"></div>			
 						</div>
 						<div class="col-md-4">
 							<div class="shadow row" style="height: 50px;background-color: #0060D5;border-top-left-radius: 7px;border-top-right-radius: 7px;margin-right:0px;margin-left:0px;">
-								<span class='heading-text' >Most searched by users</span>
+								<span class='heading-text'>Most searched by users</span>
 							</div>
-							<div id="mostSearchedByUser" style="background-color:#fff"></div>	
+							<div id="mostSearchedByUser"></div>	
 						</div>
 					</div>
 				</div>

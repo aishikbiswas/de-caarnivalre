@@ -1,0 +1,54 @@
+{
+	"parent": null,
+	"name": "Collections",
+	"Children": [{
+		"name": "Applying New business payments",
+		"Children": ["Clearing Suspense via out of scope",
+		"Processing suspense for multiple policies "]
+	},
+	{
+		"name": "Applying New business payments",
+		"Children": ["Collect Initial Premium Electronically",
+		"Duplicate Payments in New Business ",
+		"Processing Cash with Apps"]
+	},
+	{
+		"name": "Applying New business payments",
+		"Children": ["Clearing out of balance ",
+		"Shared Check processing (Multiple policies )"]
+	},
+	{
+		"name": "Applying New business payments",
+		"Children": ["Premium more than Initial premium",
+		"Case Disposition\/Status review",
+		"Cash with application",
+		"Reapplying funds to policy "]
+	},
+	{
+		"name": "Inforce Policy suspense",
+		"Children": ["Reseaching billing suspense",
+		"Fund Imbalance resolution",
+		"Missing Money sequencial analysis"]
+	},
+	{
+		"name": "Collection Agency process",
+		"Children": ["Reclaim overdisbursed funds",
+		"Collection agency documents",
+		"Client relations steps ",
+		"vwinc collections"]
+	},
+	{
+		"name": "Bank Billing Changes",
+		"Children": ["CAPS Billing ",
+		"Mode Change",
+		"Systematic LATTE Billing update",
+		"Bank Drafting"]
+	},
+	{
+		"name": "Bank Billing Changes",
+		"Children": ["Life 70 Billing",
+		"Direct Bill to systemmatic",
+		"Changing Draft ",
+		"Changing Billed to Date"]
+	}]
+}
