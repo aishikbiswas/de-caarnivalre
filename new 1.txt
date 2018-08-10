@@ -1,0 +1,36 @@
+ Sub SendReminderMail()
+        Dim s As Long, c As Long
+        Dim OutLookApp As Object
+        Dim OutLookMailItem As Object
+        Dim strBody As String
+
+   
+    Set OutLookApp = CreateObject("Outlook.application")
+    Set OutLookMailItem = OutLookApp.CreateItem(0)
+
+
+
+     For Each Cell In Selection
+     Cell.Select
+
+     s = ActiveCell.Row
+     c = ActiveCell.Column
+
+
+       If Cells(s, c).Value = "Y" Then
+        strBody = "Hello , HI How are you ? Today"
+          Set OutLookMailItem = OutLookApp.CreateItem(0)
+          With OutLookMailItem
+
+              .To = Cells(s, c + 1).Value
+              .Subject = "Reminder: Testing the VBA in excel"
+              .Body = "Dear " & strBody
+
+              .Send
+          End With
+          Cells(s, c + 2) = "Sent"
+      End If
+
+    Next Cell
+    
+End Sub
